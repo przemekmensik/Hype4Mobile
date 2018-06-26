@@ -151,7 +151,6 @@ h4 {
 
 .outer {
   margin-top: 50px;
-  height: 110px;
   background-color: white;
   border-left: 20px solid #ffbe33;
   position: relative;
@@ -214,6 +213,24 @@ button:hover {
   /* Width of new image */
   height: 20px;
   /* Height of new image */
+}
+
+@media (max-width: 767.98px) {
+  .mobile-invisible {
+    display: none;
+  }
+  .col-md-4 {
+    flex: none;
+  }
+  .mobile-data {
+    width: 33%;
+  }
+  .main {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
