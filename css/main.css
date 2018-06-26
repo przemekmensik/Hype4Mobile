@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@font-face {
+  font-family: "Raleway-black";
+  src: url("../fonts/raleway-black-webfont.woff");
+}
+
+@font-face {
+  font-family: "Raleway-bold";
+  src: url("../fonts/raleway-bold-webfont.woff");
+}
+
+@font-face {
+  font-family: "Raleway-light";
+  src: url("../fonts/raleway-light-webfont.woff");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../fonts/pacifico-webfont.woff");
+}
+
+/* komentarz*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e7ecf5;
+}
+
+h5 {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  position: relative;
+  line-height: 16px;
+  left: 12px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px 0 rgba(153, 153, 153, 0.45);
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+
+.one {
+  border: 1px solid green;
+}
+
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: #474747;
+  line-height: 21px;
+  height: 40px;
+  width: 199px;
+}
+
+.main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  line-height: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  left: -30px;
+}
+
+.main p {
+  margin-bottom: 0px;
+}
+
+.text {
+  display: inline-block;
+}
+
+.oval {
+  height: 7px;
+  width: 7px;
+  background-color: #FFBE33;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 3px;
+}
+
+.rectangle {
+  height: 75px;
+  width: 1px;
+  border: 1px solid #979797;
+  opacity: 0.2;
+  background-color: #D8D8D8;
+  margin-top: 17.5px;
+  left: 318px;
+}
+
+.rectangle-2 {
+  height: 75px;
+  width: 1px;
+  border: 1px solid #979797;
+  opacity: 0.2;
+  background-color: #D8D8D8;
+  margin-top: 17.5px;
+  left: 467px;
+}
+
+.second-column {
+  text-align: center;
+}
+
+.second-column h4 {
+  display: inline-block;
+  text-align: center;
+  height: 28px;
+  width: 53px;
+  color: #D83550;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+.second-column p {
+  font-size: 10px;
+  color: #474747;
+}
+
+.second-column span {
+  font-size: 10px;
+  color: #474747;
+  display: inline-block;
+}
+
+.percent {
+  height: 28px;
+  width: 59px;
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 8px;
+  color: #474747;
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.small-text {
+  font-size: 10px;
+  text-align: center;
+}
+
+.outer {
+  margin-top: 50px;
+  height: 110px;
+  background-color: white;
+  border-left: 20px solid #ffbe33;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 1px 1px 1px 1px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  height: 34px;
+  font-family: Poppins;
+  font-size: 10px;
+  text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d32e4f+0,f76258+100 */
+  background: #d32e4f;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #d32e4f 0%, #f76258 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #d32e4f 0%, #f76258 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #d32e4f 0%, #f76258 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32e4f', endColorstr='#f76258',GradientType=1 );
+  /* IE6-9 */
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px #ccc;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 2px 2px 2px 2px #ccc;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 2px 2px 2px 2px #ccc;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  transform: scale(1.1);
+}
+
+.icons {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.eye-icon:hover {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(../img/okohover.png) no-repeat;
+  width: 26px;
+  /* Width of new image */
+  height: 20px;
+  /* Height of new image */
+}
+
+/*# sourceMappingURL=main.css.map */
