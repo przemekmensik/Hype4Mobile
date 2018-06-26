@@ -136,7 +136,8 @@ h5 {
 
 }
 .one {
-	border: 1px solid green;
+	//border-left: 1px solid #D8D8D8;
+	//line-height: 15px;
 }
 
 h4 {
@@ -312,12 +313,17 @@ button:hover {
 	}
 
 	.mobile-data {
-    width: 33%;
+    width: 32%;
 
 	}
 
 	.main {
 		width: 100%;
+	}
+
+	.percent {
+		width: auto;
+		display: block;
 	}
 
 	button {
@@ -348,7 +354,7 @@ button:hover {
 			}
 
 			.mobile-data {
-				width: 33%;
+				width: 32%;
 
 			}
 

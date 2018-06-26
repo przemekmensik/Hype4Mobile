@@ -43,10 +43,6 @@ h5 {
   font-size: 10px;
 }
 
-.one {
-  border: 1px solid green;
-}
-
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
@@ -223,10 +219,14 @@ button:hover {
     flex: none !important;
   }
   .mobile-data {
-    width: 33%;
+    width: 32%;
   }
   .main {
     width: 100%;
+  }
+  .percent {
+    width: auto;
+    display: block;
   }
   button {
     width: 100%;
@@ -236,6 +236,27 @@ button:hover {
 @media (min-width: 576px) {
   .col-sm-4 {
     flex: none !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .col-sm-4 {
+    flex: none !important;
+  }
+  .mobile-invisible {
+    display: none;
+  }
+  .col-md-4 {
+    flex: none !important;
+  }
+  .mobile-data {
+    width: 32%;
+  }
+  .main {
+    width: 100%;
+  }
+  button {
+    width: 100%;
   }
 }
 
