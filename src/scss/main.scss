@@ -308,7 +308,7 @@ button:hover {
 
 	}
 	.col-md-4 {
-		flex:none;
+		flex:none !important;
 	}
 
 	.mobile-data {
@@ -322,5 +322,11 @@ button:hover {
 
 	button {
 		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+.col-sm-4 {
+	flex:none !important;
 	}
 }
