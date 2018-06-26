@@ -349,6 +349,66 @@ button:hover {
 	.rectangle {
 		display: none
 	}
+	.rectangle-2 {
+		display: none
+	}
+
+	#first {
+		order: 1;
+	}
+
+	#second {
+		order: 3;
+		position: relative;
+		border-top: 1px solid #D8D8D8;
+		margin-left: 4%;
+	}
+
+	#second:after {
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 25%;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #D8D8D8;
+}
+	#third {
+		order: 4;
+		position: relative;
+		border-top: 1px solid #D8D8D8;
+	}
+
+	#third:after {
+  content : "";
+  position: absolute;
+  right    : 0;
+  z-index: 100;
+  top  : 25%;
+  width  : 1px;
+  height   : 60%;  /* or 100px */
+  background: #D8D8D8;
+}
+	#fourth {
+		order: 5;
+		position: relative;
+		//border-top: 1px solid #D8D8D8;
+	}
+
+	#fourth:after {
+		content : "";
+	  position: absolute;
+	  left    : 0;
+	  z-index: 100;
+	  top  : 0;
+	  width  : 90%;
+	  height   : 1%;  /* or 100px */
+	  background: #D8D8D8;
+}
+	#fifth {
+		order: 2;
+	}
 }
 
 @media (min-width: 576px) {
@@ -402,7 +462,68 @@ button:hover {
 			}
 
 			.rectangle {
+				display: none;
+			}
+
+			.rectangle-2 {
 				display: none
+			}
+
+			#first {
+				order: 1;
+			}
+
+			#second {
+				order: 3;
+				position: relative;
+				border-top: 1px solid #D8D8D8;
+				margin-left: 4%;
+			}
+
+			#second:after {
+		  content : "";
+		  position: absolute;
+		  right    : 0;
+		  z-index: 100;
+		  top  : 25%;
+		  width  : 1px;
+		  height   : 60%;  /* or 100px */
+		  background: #D8D8D8;
+		}
+			#third {
+				order: 4;
+				position: relative;
+				border-top: 1px solid #D8D8D8;
+			}
+
+			#third:after {
+		  content : "";
+		  position: absolute;
+		  right    : 0;
+		  z-index: 100;
+		  top  : 25%;
+		  width  : 1px;
+		  height   : 60%;  /* or 100px */
+		  background: #D8D8D8;
+		}
+			#fourth {
+				order: 5;
+				position: relative;
+				//border-top: 1px solid #D8D8D8;
+			}
+
+			#fourth:after {
+				content : "";
+			  position: absolute;
+			  left    : 0;
+			  z-index: 100;
+			  top  : 0;
+			  width  : 90%;
+			  height   : 1%;  /* or 100px */
+			  background: #D8D8D8;
+		}
+			#fifth {
+				order: 2;
 			}
 
 }

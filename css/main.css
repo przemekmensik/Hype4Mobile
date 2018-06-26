@@ -251,6 +251,63 @@ button:hover {
   .rectangle {
     display: none;
   }
+  .rectangle-2 {
+    display: none;
+  }
+  #first {
+    order: 1;
+  }
+  #second {
+    order: 3;
+    position: relative;
+    border-top: 1px solid #D8D8D8;
+    margin-left: 4%;
+  }
+  #second:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 25%;
+    width: 1px;
+    height: 60%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #third {
+    order: 4;
+    position: relative;
+    border-top: 1px solid #D8D8D8;
+  }
+  #third:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 25%;
+    width: 1px;
+    height: 60%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #fourth {
+    order: 5;
+    position: relative;
+  }
+  #fourth:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    width: 90%;
+    height: 1%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #fifth {
+    order: 2;
+  }
 }
 
 @media (min-width: 576px) {
@@ -277,6 +334,82 @@ button:hover {
   }
   button {
     width: 100%;
+  }
+  button:hover {
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: 1px 1px 1px 1px #ccc;
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    transform: scale(1.02);
+  }
+  .pasek {
+    padding-right: 250px;
+    margin-left: -170px;
+    top: 25px;
+  }
+  .rectangle {
+    display: none;
+  }
+  .rectangle-2 {
+    display: none;
+  }
+  #first {
+    order: 1;
+  }
+  #second {
+    order: 3;
+    position: relative;
+    border-top: 1px solid #D8D8D8;
+    margin-left: 4%;
+  }
+  #second:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 25%;
+    width: 1px;
+    height: 60%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #third {
+    order: 4;
+    position: relative;
+    border-top: 1px solid #D8D8D8;
+  }
+  #third:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    top: 25%;
+    width: 1px;
+    height: 60%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #fourth {
+    order: 5;
+    position: relative;
+  }
+  #fourth:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    top: 0;
+    width: 90%;
+    height: 1%;
+    /* or 100px */
+    background: #D8D8D8;
+  }
+  #fifth {
+    order: 2;
   }
 }
 
