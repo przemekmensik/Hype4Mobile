@@ -1,24 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-@font-face {
-  font-family: "Raleway-black";
-  src: url("../fonts/raleway-black-webfont.woff");
-}
-
-@font-face {
-  font-family: "Raleway-bold";
-  src: url("../fonts/raleway-bold-webfont.woff");
-}
-
-@font-face {
-  font-family: "Raleway-light";
-  src: url("../fonts/raleway-light-webfont.woff");
-}
-
-@font-face {
-  font-family: "Pacifico";
-  src: url("../fonts/pacifico-webfont.woff");
-}
-
 /* komentarz*/
 * {
   box-sizing: border-box;
@@ -201,6 +181,10 @@ button:hover {
   margin-top: 5px;
 }
 
+.icons-mobile {
+  display: none;
+}
+
 .eye-icon:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -212,6 +196,9 @@ button:hover {
 }
 
 @media (max-width: 767.98px) {
+  h4 {
+    display: inline-block;
+  }
   .mobile-invisible {
     display: none;
   }
@@ -308,15 +295,57 @@ button:hover {
   #fifth {
     order: 2;
   }
-}
-
-@media (min-width: 576px) {
-  .col-sm-4 {
-    flex: none !important;
+  .icons {
+    display: none;
+  }
+  .icons-mobile {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 13%;
+    left: 88%;
+  }
+  .eye-icon {
+    position: relative;
+  }
+  eye-icon:hover {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 26px;
+    height: 20px;
+  }
+  .eye-icon-hover {
+    opacity: 0;
+    position: absolute;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 26px;
+    height: 20px;
+    left: 15px;
+  }
+  .eye-icon-hover:hover {
+    opacity: 1;
+    position: absolute;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 26px;
+    height: 20px;
+    left: 15px;
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media (max-width: 767.98px) and (min-width: 576px) {
+  .col-sm-4 {
+    flex: none !important;
+  }
+  .icons-mobile {
+    display: inline-block;
+    vertical-align: top;
+    right: -30%;
+  }
+}
+
+@media only screen and (max-width: 767.98px) and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .col-sm-4 {
     flex: none !important;
   }

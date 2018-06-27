@@ -1,20 +1,3 @@
-@font-face {
-	font-family: "Raleway-black";
-	src: url('../fonts/raleway-black-webfont.woff');
-}
-@font-face {
-	font-family: "Raleway-bold";
-	src: url('../fonts/raleway-bold-webfont.woff');
-}
-@font-face {
-	font-family: "Raleway-light";
-	src: url('../fonts/raleway-light-webfont.woff');
-}
-@font-face {
-	font-family: "Pacifico";
-	src: url('../fonts/pacifico-webfont.woff');
-}
-
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* komentarz*/
@@ -288,6 +271,10 @@ button:hover {
 	margin-top: 5px;
 }
 
+.icons-mobile {
+	display: none;
+}
+
 
 .eye-icon:hover  {
 	//display: block;
@@ -301,9 +288,14 @@ button:hover {
    height: 20px; /* Height of new image */
    //padding-left: 180px;
 
+
 }
 
 @media (max-width: 767.98px) {
+
+	h4 {
+		display: inline-block;
+	}
 	.mobile-invisible  {
 		display: none;
 
@@ -365,14 +357,14 @@ button:hover {
 	}
 
 	#second:after {
-  content : "";
-  position: absolute;
-  right    : 0;
-  z-index: 100;
-  top  : 25%;
-  width  : 1px;
-  height   : 60%;  /* or 100px */
-  background: #D8D8D8;
+	  content : "";
+	  position: absolute;
+	  right    : 0;
+	  z-index: 100;
+	  top  : 25%;
+	  width  : 1px;
+	  height   : 60%;  /* or 100px */
+	  background: #D8D8D8;
 }
 	#third {
 		order: 4;
@@ -381,14 +373,14 @@ button:hover {
 	}
 
 	#third:after {
-  content : "";
-  position: absolute;
-  right    : 0;
-  z-index: 100;
-  top  : 25%;
-  width  : 1px;
-  height   : 60%;  /* or 100px */
-  background: #D8D8D8;
+	  content : "";
+	  position: absolute;
+	  right    : 0;
+	  z-index: 100;
+	  top  : 25%;
+	  width  : 1px;
+	  height   : 60%;  /* or 100px */
+	  background: #D8D8D8;
 }
 	#fourth {
 		order: 5;
@@ -409,11 +401,65 @@ button:hover {
 	#fifth {
 		order: 2;
 	}
+.icons {
+	display: none;
+}
+
+.icons-mobile {
+		display: inline-block;
+		vertical-align: top;
+		position:absolute;
+		top:13%;
+		left:88%;
+	}
+	.eye-icon {
+	  position:relative;
+	}
+	eye-icon:hover {
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 26px;
+	  height: 20px;
+	}
+
+	.eye-icon-hover {
+	  opacity:0;
+	  position:absolute;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 26px;
+	  height: 20px;
+	  //top:68px;
+	  left:15px
+	}
+
+	.eye-icon-hover:hover {
+	  opacity:1;
+	  position:absolute;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  width: 26px;
+	  height: 20px;
+	  //top:68px;
+	  left:15px;
+
+.col-sm-7 {
+	//display: flex;
+	//border: 1px solid red;
+}
+
 }
 
 @media (min-width: 576px) {
+
 .col-sm-4 {
 	flex:none !important;
+	}
+
+.icons-mobile {
+    display: inline-block;
+    vertical-align: top;
+    right: -30%;
 	}
 }
 
@@ -526,4 +572,4 @@ button:hover {
 				order: 2;
 			}
 
-}
+}}
