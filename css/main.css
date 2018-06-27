@@ -199,6 +199,9 @@ button:hover {
   h4 {
     display: inline-block;
   }
+  #second-text {
+    display: none;
+  }
   .mobile-invisible {
     display: none;
   }
@@ -218,22 +221,22 @@ button:hover {
   }
   button {
     width: 100%;
+    margin-top: 0;
+    margin-bottom: 15px;
   }
   button:hover {
     padding: 10px;
-    border-radius: 5px;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px 5px 2px #ccc;
     /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow: 1px 1px 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px 5px 2px #ccc;
     /* Firefox 3.5 - 3.6 */
-    box-shadow: 1px 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 5px 2px #ccc;
     /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     transform: scale(1.02);
   }
   .pasek {
     padding-right: 250px;
     margin-left: -170px;
-    top: 25px;
   }
   .rectangle {
     display: none;
@@ -302,8 +305,8 @@ button:hover {
     display: inline-block;
     vertical-align: top;
     position: absolute;
-    top: 13%;
-    left: 88%;
+    top: 14%;
+    left: 87%;
   }
   .eye-icon {
     position: relative;
@@ -337,11 +340,6 @@ button:hover {
 @media (max-width: 767.98px) and (min-width: 576px) {
   .col-sm-4 {
     flex: none !important;
-  }
-  .icons-mobile {
-    display: inline-block;
-    vertical-align: top;
-    right: -30%;
   }
 }
 
@@ -378,7 +376,6 @@ button:hover {
   .pasek {
     padding-right: 250px;
     margin-left: -170px;
-    top: 25px;
   }
   .rectangle {
     display: none;
@@ -439,6 +436,11 @@ button:hover {
   }
   #fifth {
     order: 2;
+  }
+  .icons-mobile {
+    position: absolute;
+    top: 14%;
+    left: 87%;
   }
 }
 
