@@ -334,6 +334,10 @@ button:hover {
     flex: 0 0 100%;
     min-width: 100%;
 		text-align: -webkit-center;
+		text-align: -moz-center;
+		text-align: -o-center;
+		text-align: -ms-center;
+		text-align: center;;
 		left: 0;
 
 		h4 {
